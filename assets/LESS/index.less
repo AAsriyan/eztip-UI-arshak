@@ -1,0 +1,37 @@
+@import './reset';
+@import './variables';
+@import './mixins';
+@import './navBar';
+@import './top-content';
+@import './mid-content';
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+
+
+body {
+  max-width: 1000px;
+  .width-100;
+  color: @text-color;
+  //background-color: @bg-color;
+  margin: 0 auto;
+  // .flex(center);
+}
+
+p {
+  font-family: @text-font;
+  margin-bottom: 10px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: @header-font;
+  margin-bottom: 10px;
+}
+
+section {
+  margin: 60px 0;
+}
+

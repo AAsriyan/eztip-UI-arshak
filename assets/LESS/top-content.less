@@ -1,0 +1,61 @@
+.top-content {
+  .flex(space-around);
+  margin-bottom: 20px;
+
+  .top-content-text {
+    width: 50%;
+    padding: 30px;
+
+    h1 {
+      font-size: 30px;
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      margin-bottom: 10px;
+    }
+
+    button {
+      width: 35%;
+      height: 40px;
+      font-size: 15px;
+      font-family: @header-font;
+      border-radius: 10px;
+      text-align: center;
+      margin: 10px 0px;
+    }
+
+    .tip {
+      margin-bottom: 30px;
+    }
+
+    .give-tip {
+      background-color: @bg-color;
+      
+      &:hover {
+        background-color: @text-color;
+        color: white;
+      }
+    }
+
+    .receive-tip {
+      background-color: @text-color;
+      color: white;
+
+      &:hover {
+        background-color: @bg-color;
+        color: @text-color;
+      }
+    }
+  }
+
+  .top-content-img {
+    max-width: 50%;
+    .flex(center, center);
+
+    img {
+      width: 100%;
+      border-radius: 10px;
+    }
+  }
+}
