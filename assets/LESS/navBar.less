@@ -2,12 +2,27 @@ header {
   .flex(space-between, baseline);
   .width-100;
   background-color: @bg-color;
-  border-radius: 10px;
+  //border-radius: 10px;
+  margin-bottom: 20px;
 
   span {
     font-size: 30px;
     padding: 30px;
     font-family: @header-font;
+
+    @media (max-width: 800px) {
+      width: 100%;
+      justify-content: center;
+      text-align: center;
+      position: fixed;
+      background-color: @bg-color;
+    }
+  }
+
+  img {
+    position: fixed;
+    right: 5px;
+    cursor: pointer;
   }
 
   nav {
@@ -25,12 +40,56 @@ header {
         background-color: white;
         color: @bg-color;
       }
+
+      @media (max-width: 500px) {
+        position: fixed;
+        padding: 10px;
+        right: 0px;
+        top: 40px;
+        width: 100%;
+        text-align: center;
+      }
     }
 
-    .log {
-      //padding-left: 100px;
+    @media (max-width: 800px) {
+      width: 100%;
+      justify-content: center;
+    }
+
+    @media (max-width: 500px) {
+      display: none;
+      justify-content: center;
     }
   }
 
-  margin-bottom: 20px;
+  @media (max-width: 800px) {
+    flex-direction: column;
+  }
+
+  #link2 {
+    @media (max-width: 500px) {
+      position: fixed;
+      padding: 10px;
+      right: 0px;
+      top: 75px;
+    }
+  }
+
+  #link3 {
+    @media (max-width: 500px) {
+      position: fixed;
+      padding: 10px;
+      right: 0px;
+      top: 110px;
+    }
+  }
+
+  #link4 {
+    @media (max-width: 500px) {
+      position: fixed;
+      padding: 10px;
+      right: 0px;
+      top: 140px;
+    }
+  }
 }

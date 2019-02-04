@@ -141,13 +141,26 @@ header {
   flex-direction: row;
   width: 100%;
   background-color: #49fcd4;
-  border-radius: 10px;
   margin-bottom: 20px;
 }
 header span {
   font-size: 30px;
   padding: 30px;
   font-family: 'Raleway', sans-serif;
+}
+@media (max-width: 800px) {
+  header span {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    position: fixed;
+    background-color: #49fcd4;
+  }
+}
+header img {
+  position: fixed;
+  right: 5px;
+  cursor: pointer;
 }
 header nav {
   display: flex;
@@ -166,6 +179,57 @@ header nav a {
 header nav a:hover {
   background-color: white;
   color: #49fcd4;
+}
+@media (max-width: 500px) {
+  header nav a {
+    position: fixed;
+    padding: 10px;
+    right: 0px;
+    top: 40px;
+    width: 100%;
+    text-align: center;
+  }
+}
+@media (max-width: 800px) {
+  header nav {
+    width: 100%;
+    justify-content: center;
+  }
+}
+@media (max-width: 500px) {
+  header nav {
+    display: none;
+    justify-content: center;
+  }
+}
+@media (max-width: 800px) {
+  header {
+    flex-direction: column;
+  }
+}
+@media (max-width: 500px) {
+  header #link2 {
+    position: fixed;
+    padding: 10px;
+    right: 0px;
+    top: 75px;
+  }
+}
+@media (max-width: 500px) {
+  header #link3 {
+    position: fixed;
+    padding: 10px;
+    right: 0px;
+    top: 110px;
+  }
+}
+@media (max-width: 500px) {
+  header #link4 {
+    position: fixed;
+    padding: 10px;
+    right: 0px;
+    top: 140px;
+  }
 }
 .top-content {
   display: flex;
@@ -186,7 +250,7 @@ header nav a:hover {
   margin-bottom: 10px;
 }
 .top-content .top-content-text button {
-  width: 35%;
+  width: 160px;
   height: 40px;
   font-size: 15px;
   font-family: 'Raleway', sans-serif;
@@ -212,6 +276,11 @@ header nav a:hover {
   background-color: #49fcd4;
   color: #000000;
 }
+@media (max-width: 500px) {
+  .top-content .top-content-text {
+    width: 100%;
+  }
+}
 .top-content .top-content-img {
   max-width: 50%;
   display: flex;
@@ -222,6 +291,16 @@ header nav a:hover {
 .top-content .top-content-img img {
   width: 100%;
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .top-content .top-content-img img {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .top-content {
+    margin-top: 80px;
+  }
 }
 .mid-content {
   width: 100%;
@@ -235,6 +314,11 @@ header nav a:hover {
   padding: 20px 0;
   margin-bottom: 30px;
   border-radius: 10px;
+}
+@media (width: 500px) {
+  .mid-content .mid-content-icons {
+    display: block;
+  }
 }
 .mid-content img {
   border-radius: 10px;
@@ -268,6 +352,27 @@ header nav a:hover {
 .mid-content .imgList .instant .instant-img {
   width: 50%;
 }
+@media (max-width: 500px) {
+  .mid-content .imgList .send .send-img,
+  .mid-content .imgList .peers .send-img,
+  .mid-content .imgList .instant .send-img,
+  .mid-content .imgList .send .peers-img,
+  .mid-content .imgList .peers .peers-img,
+  .mid-content .imgList .instant .peers-img,
+  .mid-content .imgList .send .instant-img,
+  .mid-content .imgList .peers .instant-img,
+  .mid-content .imgList .instant .instant-img {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .mid-content .imgList .send,
+  .mid-content .imgList .peers,
+  .mid-content .imgList .instant {
+    display: block;
+    width: 100%;
+  }
+}
 .mid-content .imgList .send .send-text,
 .mid-content .imgList .peers .send-text,
 .mid-content .imgList .instant .send-text,
@@ -280,15 +385,50 @@ header nav a:hover {
   width: 50%;
   padding: 0 30px;
 }
+@media (max-width: 500px) {
+  .mid-content .imgList .send .send-text,
+  .mid-content .imgList .peers .send-text,
+  .mid-content .imgList .instant .send-text,
+  .mid-content .imgList .send .peers-text,
+  .mid-content .imgList .peers .peers-text,
+  .mid-content .imgList .instant .peers-text,
+  .mid-content .imgList .send .instant-text,
+  .mid-content .imgList .peers .instant-text,
+  .mid-content .imgList .instant .instant-text {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .mid-content .imgList .peers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+}
+.mid-content .imgList .peers .peers-text {
+  order: 0;
+}
 .mid-content .imgList img {
   width: 100%;
+}
+@media (max-width: 500px) {
+  .mid-content .imgList img {
+    width: 90%;
+    margin: 20px;
+  }
+}
+@media (max-width: 500px) {
+  .mid-content {
+    margin-top: 0;
+  }
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
 body {
-  max-width: 1000px;
+  max-width: 10000px;
   width: 100%;
   color: #000000;
   margin: 0 auto;
@@ -308,4 +448,7 @@ h6 {
 }
 section {
   margin: 60px 0;
+}
+.toggleDisplay {
+  display: none;
 }
