@@ -373,6 +373,8 @@ header nav a:hover {
   justify-content: space-between;
   align-items: none;
   flex-direction: row;
+  border-bottom: 3px dashed #49fcd4;
+  padding-bottom: 40px;
   margin-bottom: 50px;
 }
 .mid-content .imgList .send h2,
@@ -482,6 +484,14 @@ header nav a:hover {
 .footer footer p {
   text-align: center;
 }
+.test h2 {
+  font-size: 40px;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  padding-bottom: 40px;
+  margin-bottom: 40px;
+  border-bottom: 1px dashed black;
+}
 .test .person {
   border: 2px solid #49fcd4;
   border-radius: 10px;
@@ -495,13 +505,15 @@ header nav a:hover {
   align-items: center;
   flex-direction: row;
 }
+.test .person .person-img p {
+  margin-right: 20px;
+  line-height: 2;
+}
 .test .person img {
   border-radius: 50%;
-  margin-top: 10px;
-  margin-left: 20px;
+  margin: 20px 20px;
 }
 .test .person p {
-  display: inline-block;
   line-height: 2;
 }
 .test .person .person-text {
