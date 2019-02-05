@@ -1,6 +1,6 @@
 .top-content {
   .flex(space-around);
-  margin-bottom: 20px;
+  margin: 100px 0 20px 0;
 
   .top-content-text {
     h1 {
@@ -58,7 +58,7 @@
       }
     }
 
-    @media (max-width: 500px) {
+    @media (max-width: 550px) {
       width: 100%;
     }
   }
@@ -71,17 +71,24 @@
       width: 100%;
       border-radius: 10px;
 
-      @media (max-width: 500px) {
+      @media (max-width: 550px) {
         display: none;
       }
     }
-  }
 
-  @media (max-width: 500px) {
-    margin-top: 80px;
+    @media (max-width: 800px) {
+      max-width: 100%;
+      width: 90%;
+      margin-left: 25px;
+    }
   }
 
   @media (max-width: 800px) {
     margin-top: 150px;
+    display: block;
+  }
+
+  @media (max-width: 550px) {
+    margin-top: 80px;
   }
 }
