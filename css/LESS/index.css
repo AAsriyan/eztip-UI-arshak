@@ -135,34 +135,48 @@ body {
   width: 100%;
 }
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  flex-direction: row;
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   background-color: #49fcd4;
   margin-bottom: 20px;
 }
-header span {
-  font-size: 30px;
-  padding: 30px;
-  font-family: 'Raleway', sans-serif;
+header .logo {
+  position: fixed;
+  width: 120px;
+  padding-left: 30px;
+  align-items: center;
 }
 @media (max-width: 800px) {
-  header span {
-    width: 100%;
+  header .logo {
+    width: 120px;
     justify-content: center;
     text-align: center;
     position: fixed;
     background-color: #49fcd4;
+    left: 35%;
   }
 }
-header img {
-  position: fixed;
-  right: 5px;
-  cursor: pointer;
+header .menu-img {
+  background-color: #49fcd4;
+}
+@media (max-width: 800px) {
+  header .menu-img {
+    position: fixed;
+    right: 5px;
+    cursor: pointer;
+  }
+}
+@media (max-width: 500px) {
+  header .menu-img {
+    position: fixed;
+    right: 5px;
+    cursor: pointer;
+  }
 }
 header nav {
+  right: 0;
   display: flex;
   justify-content: flex-end;
   align-items: none;
@@ -193,7 +207,8 @@ header nav a:hover {
 @media (max-width: 800px) {
   header nav {
     width: 100%;
-    justify-content: center;
+    justify-content: space-between;
+    margin-top: 40px;
   }
 }
 @media (max-width: 500px) {
@@ -245,18 +260,21 @@ header nav a:hover {
   flex-direction: row;
   margin-bottom: 20px;
 }
-.top-content .top-content-text {
-  width: 50%;
-  padding: 30px;
-}
 .top-content .top-content-text h1 {
+  display: block;
   font-size: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
+  padding-left: 10px;
 }
-.top-content .top-content-text h2 {
+.top-content .tip-receive {
+  display: flex;
+  width: 100%;
+  padding: 10px;
+}
+.top-content .tip-receive h2 {
   margin-bottom: 10px;
 }
-.top-content .top-content-text button {
+.top-content .tip-receive button {
   width: 160px;
   height: 40px;
   font-size: 15px;
@@ -265,26 +283,26 @@ header nav a:hover {
   text-align: center;
   margin: 10px 0px;
 }
-.top-content .top-content-text .tip {
+.top-content .tip-receive .tip {
   margin-bottom: 30px;
 }
-.top-content .top-content-text .give-tip {
+.top-content .tip-receive .give-tip {
   background-color: #49fcd4;
 }
-.top-content .top-content-text .give-tip:hover {
+.top-content .tip-receive .give-tip:hover {
   background-color: #000000;
   color: white;
 }
-.top-content .top-content-text .receive-tip {
+.top-content .tip-receive .receive-tip {
   background-color: #000000;
   color: white;
 }
-.top-content .top-content-text .receive-tip:hover {
+.top-content .tip-receive .receive-tip:hover {
   background-color: #49fcd4;
   color: #000000;
 }
 @media (max-width: 500px) {
-  .top-content .top-content-text {
+  .top-content .tip-receive {
     width: 100%;
   }
 }
@@ -307,6 +325,11 @@ header nav a:hover {
 @media (max-width: 500px) {
   .top-content {
     margin-top: 80px;
+  }
+}
+@media (max-width: 800px) {
+  .top-content {
+    margin-top: 150px;
   }
 }
 .mid-content {
@@ -431,7 +454,7 @@ header nav a:hover {
   }
 }
 .footer {
-  margin: 10px 0;
+  margin: 0;
   background-color: #49fcd4;
 }
 .footer footer nav {
