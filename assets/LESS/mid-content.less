@@ -1,13 +1,23 @@
 .mid-content {
-  //.flex(space-between);
   width: 100%;
-  
+  margin: 40px o;
+
+  h2 {
+    background-color: @bg-color;
+    border-radius: 10px;
+  }
+
   .mid-content-icons {
     .flex(space-evenly);
     background-color: @bg-color;
     padding: 20px 0;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
     border-radius: 10px;
+
+    img {
+      height: 120px;
+      margin-bottom: 10px;
+    }
  
     @media (width: 550px) {
       display: block;
@@ -17,6 +27,7 @@
   img {
     border-radius: 10px;
     border: 3px solid black;
+    
 
     &:hover {
       background-color: white;
@@ -24,8 +35,9 @@
   }
 
   .imgList {
+    
     .send, .peers, .instant {
-      .flex(space-between);
+      .flex(space-around);
       border-bottom: 3px dashed @bg-color;
       padding-bottom: 40px;
       margin-bottom: 50px;
@@ -35,9 +47,10 @@
       }
       
       .send-img, .peers-img, .instant-img {
-        width: 50%;
+        max-width: 45%;
 
         @media (max-width: 550px) {
+          max-width: 100%;
           width: 100%;
         }
       }
@@ -63,13 +76,31 @@
         .flex(center, center, column-reverse);
       }
 
+      h2 {
+        max-width: 220px;
+        text-align: center;
+      }
+
       .peers-text {
         order: 0;
       }
     }
 
+    .instant {
+      h2 {
+        max-width: 330px;
+        text-align: center;
+      }
+    }
+
+    .send {
+      h2 {
+        max-width: 260px;
+        text-align: center;
+      }
+    }
+
     img {
-      //position: relative;
       width: 100%;
 
       @media (max-width: 550px) {

@@ -6,7 +6,8 @@ class NavLink {
   }
 
   toggleContent() {
-    this.nav.classList.toggle('toggleDisplay');
+    this.nav.classList.toggle('toggleOn');
+    
   }
 }
 
