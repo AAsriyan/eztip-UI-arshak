@@ -1,6 +1,6 @@
 .footer {
   bottom: 0;
-  height: 105px;
+  height: 167px;
   margin: 0;
   background-color: @bg-color;
   footer {
@@ -18,7 +18,7 @@
 
         &:hover {
           background-color: white;
-          color: @bg-color;
+          color: darkcyan;
         }
 
         @media (max-width: 550px) {
@@ -36,9 +36,18 @@
       text-align: center;
       padding: 10px;
     }
+
+    .apple {
+      margin: 0 20px;
+
+      @media (max-width: 550px) {
+        .flex(center, center);
+        margin: 0 auto;
+      }
+    }
   }
 
   @media (max-width: 550px) {
-    height: 330px;
+    height: 390px;
   }
 }

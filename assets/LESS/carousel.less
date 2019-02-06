@@ -12,6 +12,7 @@
   .send, .peers, .instant {
     margin-bottom: 60px;
     padding: 0 30px;
+    
 
     h2 {
       margin: auto;
@@ -22,6 +23,7 @@
     p {
       max-width: 400px;
       margin: 10px auto;
+      height: 50px;
 
       @media (max-width: 550px) {
         height: 50px;
@@ -31,8 +33,13 @@
     img {
       border-radius: 10px;
       border: 2px solid @bg-color;
+      height: 500px;
 
-      @media (max-width: 550px) {
+      @media (max-width: 850px) {
+        height: 400px;
+      }
+
+      @media (max-width: 600px) {
         height: 300px;
       }
     }

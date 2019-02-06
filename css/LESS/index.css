@@ -145,7 +145,7 @@ header .logo {
   top: 20px;
   position: fixed;
   width: 120px;
-  padding-left: 30px;
+  padding: 0 10px;
   align-items: center;
 }
 @media (max-width: 800px) {
@@ -188,7 +188,7 @@ header nav a {
 }
 header nav a:hover {
   background-color: white;
-  color: #49fcd4;
+  color: darkcyan;
 }
 @media (max-width: 550px) {
   header nav a {
@@ -230,7 +230,7 @@ header nav a:hover {
     position: fixed;
     padding: 10px;
     right: 0px;
-    top: 75px;
+    top: 76px;
   }
 }
 @media (max-width: 550px) {
@@ -238,7 +238,7 @@ header nav a:hover {
     position: fixed;
     padding: 10px;
     right: 0px;
-    top: 110px;
+    top: 112px;
   }
 }
 @media (max-width: 550px) {
@@ -246,7 +246,7 @@ header nav a:hover {
     position: fixed;
     padding: 10px;
     right: 0px;
-    top: 140px;
+    top: 148px;
   }
 }
 @media (max-width: 550px) {
@@ -254,12 +254,12 @@ header nav a:hover {
     position: fixed;
     padding: 10px;
     right: 0px;
-    top: 170px;
+    top: 184px;
   }
 }
 @media (max-width: 800px) {
   header {
-    height: 120px;
+    height: 116px;
     width: 100%;
   }
 }
@@ -274,7 +274,7 @@ header nav a:hover {
   justify-content: space-around;
   align-items: none;
   flex-direction: row;
-  margin: 100px 20px 20px 20px;
+  margin: 150px 20px 70px 20px;
 }
 .top-content .top-content-text {
   width: 60%;
@@ -389,7 +389,7 @@ header nav a:hover {
 }
 @media (max-width: 550px) {
   .mid-content .mid-content-icons .icon {
-    margin: 0 auto;
+    margin: 40px auto;
     width: 180px;
     text-align: center;
     margin-bottom: 40px;
@@ -441,6 +441,7 @@ header nav a:hover {
 .carousel .instant p {
   max-width: 400px;
   margin: 10px auto;
+  height: 50px;
 }
 @media (max-width: 550px) {
   .carousel .send p,
@@ -454,8 +455,16 @@ header nav a:hover {
 .carousel .instant img {
   border-radius: 10px;
   border: 2px solid #49fcd4;
+  height: 500px;
 }
-@media (max-width: 550px) {
+@media (max-width: 850px) {
+  .carousel .send img,
+  .carousel .peers img,
+  .carousel .instant img {
+    height: 400px;
+  }
+}
+@media (max-width: 600px) {
   .carousel .send img,
   .carousel .peers img,
   .carousel .instant img {
@@ -507,7 +516,7 @@ header nav a:hover {
 }
 .footer {
   bottom: 0;
-  height: 105px;
+  height: 167px;
   margin: 0;
   background-color: #49fcd4;
 }
@@ -528,7 +537,7 @@ header nav a:hover {
 }
 .footer footer nav a:hover {
   background-color: white;
-  color: #49fcd4;
+  color: darkcyan;
 }
 @media (max-width: 550px) {
   .footer footer nav a {
@@ -545,9 +554,21 @@ header nav a:hover {
   text-align: center;
   padding: 10px;
 }
+.footer footer .apple {
+  margin: 0 20px;
+}
+@media (max-width: 550px) {
+  .footer footer .apple {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 0 auto;
+  }
+}
 @media (max-width: 550px) {
   .footer {
-    height: 330px;
+    height: 390px;
   }
 }
 .test h2 {
@@ -584,6 +605,9 @@ header nav a:hover {
 .test .person .person-text {
   max-width: 400px;
   margin-left: 20px;
+}
+.test .person:last-child {
+  margin-bottom: 60px;
 }
 .about {
   margin-top: 170px;
@@ -726,6 +750,16 @@ header nav a:hover {
   width: 290px;
   margin: auto;
 }
+@media (max-width: 800px) {
+  .team h1 {
+    margin-top: 170px;
+  }
+}
+@media (max-width: 550px) {
+  .team h1 {
+    margin-top: 20px;
+  }
+}
 .team h2 {
   text-align: center;
   font-size: 40px;
@@ -768,6 +802,11 @@ header nav a:hover {
   flex-direction: row;
   flex-wrap: wrap;
   margin: 40px auto;
+}
+@media (max-width: 550px) {
+  .team {
+    margin-top: 90px;
+  }
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
