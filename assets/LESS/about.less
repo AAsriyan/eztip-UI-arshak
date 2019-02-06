@@ -1,0 +1,140 @@
+.about {
+  margin-top: 170px;
+
+  h1 {
+    text-align: center;
+    font-size: 50px;
+    background-color: @bg-color;
+    border-radius: 10px;
+    max-width: 550px;
+    margin: auto;
+  }
+
+  h2 {
+    font-size: 40px;
+    text-align: center;
+    background-color: @bg-color;
+    border-radius: 10px;
+    max-width: 320px;
+    margin: 0px auto;
+  }
+
+  .mission {
+    margin-bottom: 50px;
+    border-bottom: 3px dashed @bg-color;
+
+    h1 {
+      @media (max-width: 550px) {
+        max-width: 80%;
+        margin: 20px auto;
+      }
+    }
+
+    p {
+      max-width: 540px;
+      margin: 40px auto;
+      text-align: justify;
+      line-height: 1.5;
+      font-size: 1.2rem;
+
+      @media (max-width: 550px) {
+        max-width: 80%;
+        margin: 20px auto;
+      }
+    }
+  }
+
+  .benefits {
+
+    h2 {
+      max-width: 230px;
+      margin: auto;
+    }
+
+    .list {
+      .flex(space-around, center, baseline);
+      margin: 40px 20px;
+      max-width: 700px;
+      margin: 40px auto;
+  
+      img {
+        margin: 0 20px;
+      }
+  
+      p {
+        text-align: justify;
+        line-height: 1.5;
+        font-size: 1.2rem;
+        max-width: 400px;
+        margin-right: 30px;
+      }
+    }
+  }
+
+  .test {
+    border-top: 3px dashed @bg-color;
+
+    h2 {
+      padding: 0;
+      margin: 60px auto;
+      border-bottom: 3px dashed @bg-color;
+    }
+
+    h4 {
+      @media (max-width: 550px) {
+        width: 200px;
+        text-align: center;
+      }
+    }
+
+    p {
+      margin: 0 auto;
+
+      @media (max-width: 550px) {
+        text-align: center;
+      }
+    }
+
+    .person {
+      .flex(space-around, center);
+      flex-wrap: wrap;
+
+      .person-img {
+        display: block;
+
+        h4 {
+          padding: 0;
+          text-align: center;
+        }
+
+        p {
+          margin: 0;
+          padding: 0 0 20px 0;;
+          text-align: center;
+        }
+  
+        @media (max-width: 800px) {
+          width: 200px;
+          text-align: center;
+        }
+      }
+
+      .person-text {
+        margin: 0 auto;
+        p {
+          @media (max-width: 800px) {
+            padding: 20px;
+          }
+
+          @media (max-width: 550px) {
+            border-top: 2px dashed @bg-color;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 550px) {
+    margin-top: 80px;
+  }
+}
