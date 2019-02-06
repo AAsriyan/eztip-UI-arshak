@@ -511,6 +511,80 @@ header nav a:hover {
     margin-top: 0;
   }
 }
+.carousel {
+  margin: 0 auto;
+}
+.carousel img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 90%;
+  margin: 20px auto;
+  text-align: center;
+}
+.carousel .send,
+.carousel .peers,
+.carousel .instant {
+  margin-bottom: 60px;
+  padding: 0 30px;
+}
+.carousel .send h2,
+.carousel .peers h2,
+.carousel .instant h2 {
+  margin: auto;
+  font-size: 20px;
+  text-align: center;
+}
+.carousel .send p,
+.carousel .peers p,
+.carousel .instant p {
+  max-width: 400px;
+  margin: 10px auto;
+}
+.carousel .peers {
+  display: none;
+}
+.carousel .peers h2 {
+  max-width: 220px;
+}
+.carousel .instant {
+  display: none;
+}
+.carousel .instant h2 {
+  max-width: 330px;
+}
+.carousel .send h2 {
+  max-width: 260px;
+}
+.buttons {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  margin: 60px;
+}
+.buttons .left-button,
+.buttons .right-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  color: white;
+  background-color: #49fcd4;
+  border: 2px solid #49fcd4;
+  font-size: 40px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+.buttons .left-button:hover,
+.buttons .right-button:hover {
+  color: black;
+  background-color: white;
+  border: 2px solid #49fcd4;
+}
 .footer {
   bottom: 0;
   height: 105px;
